@@ -38,6 +38,8 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		5D48880AB60D45F5B8408BC9 /* libRNCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D12A3467528437188579869 /* libRNCamera.a */; };
+		CA56C13EA3654B918B562DDA /* libRNYoutubePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF0720E7614480FBF1FC373 /* libRNYoutubePlayer.a */; };
+		143FD5CC6E6E40E591E90269 /* libRCTYouTube.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F7BA5A8E73409D96A2F671 /* libRCTYouTube.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -345,6 +347,10 @@
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		D7E2E1C805E84D72925C746F /* RNCamera.xcodeproj */ = {isa = PBXFileReference; name = "RNCamera.xcodeproj"; path = "../node_modules/react-native-camera/ios/RNCamera.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		9D12A3467528437188579869 /* libRNCamera.a */ = {isa = PBXFileReference; name = "libRNCamera.a"; path = "libRNCamera.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		E5DD3792BA264DA5A30C9A6E /* RNYoutubePlayer.xcodeproj */ = {isa = PBXFileReference; name = "RNYoutubePlayer.xcodeproj"; path = "../node_modules/react-native-youtube-player/ios/RNYoutubePlayer.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		0CF0720E7614480FBF1FC373 /* libRNYoutubePlayer.a */ = {isa = PBXFileReference; name = "libRNYoutubePlayer.a"; path = "libRNYoutubePlayer.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		94F35C68F9FF49AC8E74D1F1 /* RCTYouTube.xcodeproj */ = {isa = PBXFileReference; name = "RCTYouTube.xcodeproj"; path = "../node_modules/react-native-youtube/RCTYouTube.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		A7F7BA5A8E73409D96A2F671 /* libRCTYouTube.a */ = {isa = PBXFileReference; name = "libRCTYouTube.a"; path = "libRCTYouTube.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +380,8 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				5D48880AB60D45F5B8408BC9 /* libRNCamera.a in Frameworks */,
+				CA56C13EA3654B918B562DDA /* libRNYoutubePlayer.a in Frameworks */,
+				143FD5CC6E6E40E591E90269 /* libRCTYouTube.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +569,8 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				D7E2E1C805E84D72925C746F /* RNCamera.xcodeproj */,
+				E5DD3792BA264DA5A30C9A6E /* RNYoutubePlayer.xcodeproj */,
+				94F35C68F9FF49AC8E74D1F1 /* RCTYouTube.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -582,6 +592,7 @@
 				00E356EF1AD99517003FC87E /* AwesomeProjectTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				B3C87A73CD28471992574F28 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -607,6 +618,14 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		B3C87A73CD28471992574F28 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -1188,10 +1207,14 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-camera\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-youtube-player\ios",
+					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 				);
 			};
 			name = Debug;
@@ -1213,10 +1236,14 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-camera\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-youtube-player\ios",
+					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 				);
 			};
 			name = Release;
@@ -1239,6 +1266,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-camera\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-youtube-player\ios",
+					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 				);
 			};
 			name = Debug;
@@ -1260,6 +1289,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-camera\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-youtube-player\ios",
+					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 				);
 			};
 			name = Release;
@@ -1290,10 +1321,14 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-camera\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-youtube-player\ios",
+					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 				);
 			};
 			name = Debug;
@@ -1324,10 +1359,14 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-camera\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-youtube-player\ios",
+					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 				);
 			};
 			name = Release;
@@ -1357,10 +1396,14 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-camera\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-youtube-player\ios",
+					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 				);
 			};
 			name = Debug;
@@ -1390,10 +1433,14 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-camera\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-youtube-player\ios",
+					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 				);
 			};
 			name = Release;

@@ -5,12 +5,14 @@ import { createStackNavigator } from 'react-navigation';
 import HomeScreen from './HomeScreen'
 import DetailScreen from './DetailScreen'
 import SelfPreviewScreen from './SelfPreview'
+import VideoScreen from './VideoScreen'
 
 const RootStack = createStackNavigator(
   {
     Home: HomeScreen,
     Details: DetailScreen,
-    Preview: SelfPreviewScreen
+    Preview: SelfPreviewScreen,
+    Video: VideoScreen
   },
   {
     initialRouteName: 'Home',

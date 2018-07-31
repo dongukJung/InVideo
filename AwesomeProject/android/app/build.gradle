@@ -137,6 +137,11 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-youtube')
+    compile project(':react-native-opentok')
+    compile project(':react-native-camera')
+    implementation project(':react-native-opentok')
+    implementation project(':react-native-camera')
     implementation project(':react-native-opentok')
     implementation project(':react-native-camera')
     implementation fileTree(dir: "libs", include: ["*.jar"])
