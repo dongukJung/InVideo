@@ -137,23 +137,31 @@ android {
 }
 
 dependencies {
-    compile project(':react-native-youtube')
-    compile project(':react-native-opentok')
-    compile project(':react-native-camera')
+    implementation project(':opentok-react-native')
+    implementation project(':react-native-svg')
+    implementation project(':react-native-youtube')
     implementation project(':react-native-opentok')
-    implementation project(':react-native-camera')
-    implementation project(':react-native-opentok')
-    implementation project(':react-native-camera')
-    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.opentok.android:opentok-android-sdk:2.14.0'
-    implementation "com.android.support:appcompat-v7:23.0.1"
-    implementation "com.facebook.react:react-native:+"  // From node_modules
-
-    implementation (project(':react-native-camera')) {
-    exclude group: "com.google.android.gms"
-    implementation 'com.android.support:exifinterface:27.+'
-    implementation ('com.google.android.gms:play-services-vision:12.0.1') {
-        force = true
+    implementation 'com.android.support:appcompat-v7:26.0.2'
+    implementation 'com.facebook.react:react-native:+'
+    // From node_modules
+    implementation(project(':react-native-camera')) {
+        exclude group: "com.google.android.gms"
+        implementation 'com.android.support:exifinterface:27.+'
+        implementation('com.google.android.gms:play-services-vision:12.0.1') {
+            force = true
+        }
+    }
+    implementation project(':openCVLibrary342')
+    configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion '26.1.0'
+                }
+            }
         }
     }
 }

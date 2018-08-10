@@ -5,7 +5,7 @@ import Toast, {DURATION} from 'react-native-easy-toast';
 import validate from './validate'
 import global from './global'
 
-const ServerURL = 'http://128.54.112.69:4000/api/auth/register/local'
+const ServerURL = 'http://18.209.29.27:3000/api/auth/register/local'
 
 export default class SignupScreen extends React.Component {
   constructor(){
@@ -15,7 +15,7 @@ export default class SignupScreen extends React.Component {
       username: '',
       email:'',
       password:'',
-      cpassword:''
+      cpassword:'',
     }
   }
 
@@ -47,19 +47,25 @@ export default class SignupScreen extends React.Component {
           "email": this.state.email,
           "password": this.state.password})
       })
-      .then((response) => response.text())
+      .then((response) => response.json())
       .then((responseJson) => {
           console.log(responseJson);
           this.setState({
               dataSource: responseJson,
-              Success: true
+              dataStatus: responseJson.status,
+              key: responseJson.key
               });
-          if(this.state.Success){
-            Alert.alert('Registration Success', 'Congratulations! Your Registration was Succssful',
-              [{text: 'Go to login page', onPress: ()=> this.props.navigation.goBack()}]);
-          }
-          else this.refs.toast.show("Registration failed. Please try again");
       })
+      .then(()=>{
+          if(this.state.dataStatus == 200){
+            Alert.alert('Registration Success', 'Congratulations! Your Registration was Succssful',
+              [{text: 'Back to the Login page', onPress: ()=> this.props.navigation.goBack()},
+               {text: 'Login Right now!', onPress: ()=> this.props.navigation.navigate('Home')}]);
+          }
+          else if(this.state.dataStatus == 409) this.refs.toast.show("Your " + this.state.key + " already exists! Please try again");
+          else this.refs.toast.show("At least one field is invalid. Please try again");
+        }
+      )
       .catch((error) =>{
         console.error(error);
       });
@@ -70,6 +76,7 @@ export default class SignupScreen extends React.Component {
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
        <View style = {{alignSelf:'center', alignItems: 'center'}}>
           <Text>GetFromServer: {JSON.stringify(this.state.dataSource)}</Text>
+          <Text>GetFromServerstatus: {JSON.stringify(this.state.dataStatus)}</Text>
           <Text style={{color:'purple', fontSize:30, fontWeight:'bold'}}>Signup Screen</Text>
           <View style={{alignItems: 'center',  flexDirection:'row'}}>
             <Text style={{color:'black', fontWeight:'bold'}}>Username : </Text>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AwesomeProject.iml" filepath="$PROJECT_DIR$/AwesomeProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/openCVLibrary342/openCVLibrary342.iml" filepath="$PROJECT_DIR$/openCVLibrary342/openCVLibrary342.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/opentok-react-native/android/opentok-react-native.iml" filepath="$PROJECT_DIR$/../node_modules/opentok-react-native/android/opentok-react-native.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-camera/android/react-native-camera.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-camera/android/react-native-camera.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-opentok/android/react-native-opentok.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-opentok/android/react-native-opentok.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-svg/android/react-native-svg.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-svg/android/react-native-svg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-toast/android/react-native-toast.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-toast/android/react-native-toast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-youtube/android/react-native-youtube.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-youtube/android/react-native-youtube.iml" />
+    </modules>
+  </component>
+</project>

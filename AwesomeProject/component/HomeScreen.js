@@ -17,21 +17,21 @@ export default class HomeScreen extends React.Component {
           <Button
       		  title="Log in!"
       		  onPress={() => this.props.navigation.navigate('Login')}
-            color='pink'
+            color='red'
           />
         </View>
         <View style = {{alignSelf:'center', alignItems: 'center', margin:5}}>
           <Button
             title="Open the Camera!"
             onPress={() => this.props.navigation.push('Preview')}
-            color='green'
+            color='orange'
           />
         </View>
         <View style = {{alignSelf:'center', alignItems: 'center', margin:5}}>
           <Button
             title="Open the Video!"
             onPress={() => this.props.navigation.push('Video', {VideoID : this.state.VideoID})}
-            color='gray'
+            color='yellow'
           />
         </View>
         <TextInput
@@ -39,6 +39,27 @@ export default class HomeScreen extends React.Component {
           placeholder="Type the Video ID here!"
           onChangeText={(text) => this.setState({VideoID:text})}
         />
+        <View style = {{alignSelf:'center', alignItems: 'center', margin:5}}>
+          <Button
+            title="OpenCV Camera Prac"
+            onPress={() => this.props.navigation.push('CVCam')}
+            color='green'
+          />
+        </View>
+        <View style = {{alignSelf:'center', alignItems: 'center', margin:5}}>
+          <Button
+            title="Opentok Stream Prac"
+            onPress={() => this.props.navigation.push('Opentok')}
+            color='blue'
+          />
+        </View>
+        <View style = {{alignSelf:'center', alignItems: 'center', margin:5}}>
+          <Button
+            title="Poesnet Prac"
+            onPress={() => this.props.navigation.push('Posenet')}
+            color='purple'
+          />
+        </View>
       </View>
     );
   }

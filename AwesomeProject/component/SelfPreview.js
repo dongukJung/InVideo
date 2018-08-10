@@ -14,6 +14,28 @@ const sessionId = 'YOUR_OPENTOK_SESSIONID';
 const token = '46161232';
 
 export default class SelfPreview extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      cameraType: 'front',
+      mirrorMode: false
+    };
+  }
+
+  changeCameraType() {
+    if (this.state.cameraType === 'back') {
+      this.setState({
+        cameraType: 'front',
+        mirrorMode: true
+      });
+    } else {
+      this.setState({
+        cameraType: 'back',
+        mirrorMode: false
+      });
+    }
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -22,13 +44,13 @@ export default class SelfPreview extends React.Component {
                 this.camera = ref;
               }}
               style = {styles.preview}
-              type={RNCamera.Constants.Type.front}
+              type={this.state.cameraType}
               flashMode={RNCamera.Constants.FlashMode.on}
               permissionDialogTitle={'Permission to use camera'}
               permissionDialogMessage={'We need your permission to use your camera phone'}>
               <TouchableHighlight
-              title = "Turn off"
-                onPress={() => this.props.navigation.goBack()}>
+              title = "Turn"
+                onPress={this.changeCameraType.bind(this)}>
                 <View style = {{height:50,width:50,backgroundColor:"skyblue"}}></View>
               </TouchableHighlight>
           </RNCamera>

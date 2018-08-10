@@ -41,6 +41,9 @@
 		CA56C13EA3654B918B562DDA /* libRNYoutubePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF0720E7614480FBF1FC373 /* libRNYoutubePlayer.a */; };
 		143FD5CC6E6E40E591E90269 /* libRCTYouTube.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F7BA5A8E73409D96A2F671 /* libRCTYouTube.a */; };
 		E835E4B8EE44423A8B7C8323 /* libRCTToast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D9862E033BD414D8D6BA33B /* libRCTToast.a */; };
+		6D829242653049868FD3AD35 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB024B32FDCA4C119C1D796C /* libRNSVG.a */; };
+		884E29FB7DEB44F2A9FF863B /* libRNSVG-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59834076B78640FE8584773D /* libRNSVG-tvOS.a */; };
+		32F457FAD625466AB4D666AB /* libOpenTokReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1801EF59B32C4AA9BD1AC5CA /* libOpenTokReactNative.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -354,6 +357,11 @@
 		A7F7BA5A8E73409D96A2F671 /* libRCTYouTube.a */ = {isa = PBXFileReference; name = "libRCTYouTube.a"; path = "libRCTYouTube.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		4ADD74D8034B44B4B571A4EF /* RCTToast.xcodeproj */ = {isa = PBXFileReference; name = "RCTToast.xcodeproj"; path = "../node_modules/react-native-toast/ios/RCTToast.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		8D9862E033BD414D8D6BA33B /* libRCTToast.a */ = {isa = PBXFileReference; name = "libRCTToast.a"; path = "libRCTToast.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		92E7C67697284851A5F79051 /* RNSVG.xcodeproj */ = {isa = PBXFileReference; name = "RNSVG.xcodeproj"; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		DB024B32FDCA4C119C1D796C /* libRNSVG.a */ = {isa = PBXFileReference; name = "libRNSVG.a"; path = "libRNSVG.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		59834076B78640FE8584773D /* libRNSVG-tvOS.a */ = {isa = PBXFileReference; name = "libRNSVG-tvOS.a"; path = "libRNSVG-tvOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		34FB261EA24546B6ADB257EC /* OpenTokReactNative.xcodeproj */ = {isa = PBXFileReference; name = "OpenTokReactNative.xcodeproj"; path = "../node_modules/opentok-react-native/ios/OpenTokReactNative.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		1801EF59B32C4AA9BD1AC5CA /* libOpenTokReactNative.a */ = {isa = PBXFileReference; name = "libOpenTokReactNative.a"; path = "libOpenTokReactNative.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,6 +394,8 @@
 				CA56C13EA3654B918B562DDA /* libRNYoutubePlayer.a in Frameworks */,
 				143FD5CC6E6E40E591E90269 /* libRCTYouTube.a in Frameworks */,
 				E835E4B8EE44423A8B7C8323 /* libRCTToast.a in Frameworks */,
+				6D829242653049868FD3AD35 /* libRNSVG.a in Frameworks */,
+				32F457FAD625466AB4D666AB /* libOpenTokReactNative.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +411,7 @@
 				2D02E4C61E0B4AEC006451C7 /* libRCTSettings-tvOS.a in Frameworks */,
 				2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */,
 				2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */,
+				884E29FB7DEB44F2A9FF863B /* libRNSVG-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +587,8 @@
 				E5DD3792BA264DA5A30C9A6E /* RNYoutubePlayer.xcodeproj */,
 				94F35C68F9FF49AC8E74D1F1 /* RCTYouTube.xcodeproj */,
 				4ADD74D8034B44B4B571A4EF /* RCTToast.xcodeproj */,
+				92E7C67697284851A5F79051 /* RNSVG.xcodeproj */,
+				34FB261EA24546B6ADB257EC /* OpenTokReactNative.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1215,6 +1228,9 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1222,6 +1238,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-youtube-player\ios",
 					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 					"$(SRCROOT)\..\node_modules\react-native-toast\ios\RCTToast",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\opentok-react-native\ios\OpenTokReactNative",
 				);
 			};
 			name = Debug;
@@ -1246,6 +1264,9 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1253,6 +1274,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-youtube-player\ios",
 					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 					"$(SRCROOT)\..\node_modules\react-native-toast\ios\RCTToast",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\opentok-react-native\ios\OpenTokReactNative",
 				);
 			};
 			name = Release;
@@ -1278,6 +1301,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-youtube-player\ios",
 					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 					"$(SRCROOT)\..\node_modules\react-native-toast\ios\RCTToast",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\opentok-react-native\ios\OpenTokReactNative",
 				);
 			};
 			name = Debug;
@@ -1302,6 +1327,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-youtube-player\ios",
 					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 					"$(SRCROOT)\..\node_modules\react-native-toast\ios\RCTToast",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\opentok-react-native\ios\OpenTokReactNative",
 				);
 			};
 			name = Release;
@@ -1335,6 +1362,9 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1342,6 +1372,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-youtube-player\ios",
 					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 					"$(SRCROOT)\..\node_modules\react-native-toast\ios\RCTToast",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\opentok-react-native\ios\OpenTokReactNative",
 				);
 			};
 			name = Debug;
@@ -1375,6 +1407,9 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1382,6 +1417,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-youtube-player\ios",
 					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 					"$(SRCROOT)\..\node_modules\react-native-toast\ios\RCTToast",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\opentok-react-native\ios\OpenTokReactNative",
 				);
 			};
 			name = Release;
@@ -1414,6 +1451,9 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1421,6 +1461,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-youtube-player\ios",
 					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 					"$(SRCROOT)\..\node_modules\react-native-toast\ios\RCTToast",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\opentok-react-native\ios\OpenTokReactNative",
 				);
 			};
 			name = Debug;
@@ -1453,6 +1495,9 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1460,6 +1505,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-youtube-player\ios",
 					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 					"$(SRCROOT)\..\node_modules\react-native-toast\ios\RCTToast",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\opentok-react-native\ios\OpenTokReactNative",
 				);
 			};
 			name = Release;
